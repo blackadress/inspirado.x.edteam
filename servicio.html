@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="estilos.css">
+  <style>
+    a.gflag {
+      vertical-align: middle;
+      font-size: 24px;
+      padding: 1px 0;
+      background-repeat: no-repeat;
+      background-image: url(http://gtranslate.net/flags/32.png);
+    }
+
+    a.gflag img {
+      border: 0;
+    }
+
+    ul.navbar-bar {
+      width: 1000%;
+    }
+
+    .nav-item {
+      padding: 0.25em;
+    }
+
+    .cabecera {
+      height: 5em;
+    }
+
+    /* 
+        justify-content-between
+        justify-content-end
+    */
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-laravel cabecera">
+      <div class="container-fluid">
+        <a href="https://ennovatc.com/laravel/public" class="navbar-brand">
+          ENNOVA M&amp;F S.A.C.
+        </a>
+        <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+          class="navbar-toggler">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="navbarSupportedContent" class="collapse navbar-collapse justify-content-between">
+          <ul class="navbar-nav col-md-12" style="font-weight: bold;">
+            <div class="collapse navbar-collapse">
+              <li class="nav-item ">
+                <a href="https://ennovatc.com/laravel/public/home" class="nav-link">Inicio</a>
+              </li>
+              <li class="nav-item ">
+                <a href="https://ennovatc.com/laravel/public/servicio" class="nav-link ">Servicio</a>
+              </li>
+              <li class="nav-item ">
+                <a href="https://ennovatc.com/laravel/public/innovacion" class="nav-link ">Innovacion</a>
+              </li>
+              <li class="nav-item ">
+                <a href="https://ennovatc.com/laravel/public/agenda" class="nav-link ">Agenda</a>
+              </li>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end">
+              <li class="nav-item">
+                <a href="https://ennovatc.com/laravel/public/login" class="btn btn-outline-warning ml-1">Acceder</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" onclick="doGTranslate('es|en');return false;" title="English" class="gflag nturl"
+                  style="background-position: 0px 0px;">
+                  <img src="https://gtranslate.net/flags/blank.png" height="32" width="32" alt="English">
+                </a>
+                <a href="#" onclick="doGTranslate('es|es');return false;" title="Spanish" class="gflag nturl"
+                  style="background-position: -600px -200px;">
+                  <img src="https://gtranslate.net/flags/blank.png" height="32" width="32" alt="Spanish">
+                </a>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="py-4">
+      <div
+        style="position: relative; height: 300px; margin-top: -30px; margin-bottom: 30px; background: url(&quot;https://png.pngtree.com/thumb_back/fw800/background/20190220/ourmid/pngtree-technological-sense-science-fiction-electronic-virtual-image_7688.jpg&quot;) center center / cover no-repeat fixed;">
+        <nav class="navbar navbar-light justify-content-between" style="padding: 50px;">
+          <label style="font-size: 5rem; color: white; font-family: Staatliches, cursive;">
+            <div style="border-top: 1px solid white; width: 100px; height: 2px;"></div>
+            <div style="border-bottom: 1px solid white; width: 100px; height: 2px;"></div>
+            SERVICIO
+            <div style="border-top: 1px solid white; width: 100px; height: 2px;"></div>
+            <div style="border-bottom: 1px solid white; width: 100px; height: 2px;"></div>
+          </label>
+          <form class="form-inline"><input type="search" placeholder="Search" aria-label="Search"
+              class="form-control mr-sm-2"> <button type="submit" class="btn btn-outline-success my-2 my-sm-0"><i
+                class="fas fa-search"></i></button></form>
+        </nav>
+      </div>
+      <div class="container">
+        <h1>Row 1</h1>
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <a href="servicio/desarrollo-web" class="categoria">
+              <div class="card">
+                <div class="card-body">
+                  <div class="logo"><img src="http://localhost:8080/img/iconos-06.png"></div>
+                  <h5 class="card-title">Desarrollo Web</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="servicio/marketing-digital" class="categoria">
+              <div class="card">
+                <div class="card-body">
+                  <div class="logo"><img
+                      src="https://www.mercadonegro.pe/wp-content/uploads/2018/07/MARKTING-DIGITAL.jpg"></div>
+                  <h5 class="card-title">Marketing Digital</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="servicio/comercio-electronico" class="categoria">
+              <div class="card">
+                <div class="card-body">
+                  <div class="logo"><img src="http://localhost:8080/img/iconos-02.png"></div>
+                  <h5 class="card-title">Comercio Electrónico</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="servicio/soporte-informatico" class="categoria">
+              <div class="card">
+                <div class="card-body">
+                  <div class="logo"><img src="http://localhost:8080/img/iconos-03.png"></div>
+                  <h5 class="card-title">Soporte Informático</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="servicio/circuito-electronico" class="categoria">
+              <div class="card">
+                <div class="card-body">
+                  <div class="logo"><img
+                      src="https://previews.123rf.com/images/beawolf/beawolf1509/beawolf150900012/46183724-de-muy-alta-resoluci%C3%B3n-de-un-circuito-electr%C3%B3nico.jpg">
+                  </div>
+                  <h5 class="card-title">Circuito Electrónico</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="servicio/redes" class="categoria">
+              <div class="card">
+                <div class="card-body">
+                  <div class="logo"><img src="http://localhost:8080/img/iconos-04.png"></div>
+                  <h5 class="card-title">Redes</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="servidor" class="categoria">
+              <div class="card">
+                <div class="card-body">
+                  <div class="logo"><img src="http://localhost:8080/img/iconos-05.png"></div>
+                  <h5 class="card-title">Servidor</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="servicio/camara" class="categoria">
+              <div class="card">
+                <div class="card-body">
+                  <div class="logo"><img src="http://localhost:8080/img/iconos_Mesa%20de%20trabajo%201.png"></div>
+                  <h5 class="card-title">Cámara de Seguridad</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <hr>
+        <h1>Row 2</h1>
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <a href="servicio/desarrollo-web" class="categoria">
+              <div class="card">
+                <div class="card-body">
+                  <div class="logo"><img src="http://localhost:8080/img/iconos-06.png"></div>
+                  <h5 class="card-title">Desarrollo Web</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="servicio/marketing-digital" class="categoria">
+              <div class="card">
+                <div class="card-body">
+                  <div class="logo"><img
+                      src="https://www.mercadonegro.pe/wp-content/uploads/2018/07/MARKTING-DIGITAL.jpg"></div>
+                  <h5 class="card-title">Marketing Digital</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="servicio/comercio-electronico" class="categoria">
+              <div class="card">
+                <div class="card-body">
+                  <div class="logo"><img src="http://localhost:8080/img/iconos-02.png"></div>
+                  <h5 class="card-title">Comercio Electrónico</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="servicio/soporte-informatico" class="categoria">
+              <div class="card">
+                <div class="card-body">
+                  <div class="logo"><img src="http://localhost:8080/img/iconos-03.png"></div>
+                  <h5 class="card-title">Soporte Informático</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <hr>
+        <h1>Row 3</h1>
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <a href="servicio/desarrollo-web" class="categoria">
+              <div class="card">
+                <div class="card-body">
+                  <div class="logo"><img src="http://localhost:8080/img/iconos-06.png"></div>
+                  <h5 class="card-title">Desarrollo Web</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="servicio/marketing-digital" class="categoria">
+              <div class="card">
+                <div class="card-body">
+                  <div class="logo"><img
+                      src="https://www.mercadonegro.pe/wp-content/uploads/2018/07/MARKTING-DIGITAL.jpg"></div>
+                  <h5 class="card-title">Marketing Digital</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="servicio/comercio-electronico" class="categoria">
+              <div class="card">
+                <div class="card-body">
+                  <div class="logo"><img src="http://localhost:8080/img/iconos-02.png"></div>
+                  <h5 class="card-title">Comercio Electrónico</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="servicio/soporte-informatico" class="categoria">
+              <div class="card">
+                <div class="card-body">
+                  <div class="logo"><img src="http://localhost:8080/img/iconos-03.png"></div>
+                  <h5 class="card-title">Soporte Informático</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div class="col-md-4">
+            <a href="#" class="categoria" id="prueba">
+              <div class="card">
+                <div class="card-body">
+                  <div class="logo"><img src="https://www.mercadonegro.pe/wp-content/uploads/2018/07/MARKTING-DIGITAL.jpg"></div>
+                  <h5 class="card-title">PRUEBA</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

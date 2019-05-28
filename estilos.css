@@ -2,6 +2,10 @@ a:hover {
 	text-decoration: none;
 }
 
+a {
+	z-index: 999999;
+}
+
 .card {
 	margin-top: 50px;
 	margin-bottom: 50px;
@@ -13,16 +17,7 @@ a:hover {
 	padding: 0px;
 }
 
-.categoria>.card {
-	background-color: #343a40;
-	color: white;
-	-webkit-transition-duration: 0.4s;
-	transition-duration: 0.4s;
-}
 
-.categoria>.card:hover {
-	background-color:#767585;
-}
 
 .categoria>.card>.card-body>.logo {
 	position: relative;
@@ -120,31 +115,6 @@ a:hover {
 	font-weight: bold;
 }
 
-.tapa {
-	font-weight: bold;
-	color: black;
-	width: 100%;
-	height: 200px;
-	text-align: center;
-	padding: 15px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.base {
-	opacity: 1;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-}
-
-.tapa:hover {}
-
-.base:hover {
-	opacity: 0.4;
-}
-
 hr {
 	display: block;
 	border: 0;
@@ -153,14 +123,103 @@ hr {
 	background: #343A40;
 }
 
-.prueba {
+/* Sweep to right en servicio.html */
+.categoria>.card {
 	background-color: #343A40;
-	padding: 0px;
-	-webkit-transition-duration: 0.4s;
-	transition-duration: 0.4s;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	position: relative;
+	-webkit-transition-property: color;
+	transition-property: color;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
 }
 
-.prueba:hover {
-	/* background-color: rgba(52, 68, 64) */
-	background-color: #fff;
+.categoria>.card:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #767585;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transform-origin: 0 50%;
+	transform-origin: 0 50%;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+
+.categoria>.card:hover,
+.categoria>.card:focus,
+.categoria>.card:active {
+	color: white;
+}
+
+.categoria>.card:hover:before,
+.categoria>.card:focus:before,
+.categoria>.card:active:before {
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+/* Boder transition bottom-left to bottom-right en servicio-expandido.html */
+.base {
+	opacity: 1;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.base:hover {
+	opacity: 0.4;
+}
+
+
+/*  */
+
+
+.tapa {
+	font-weight: bold;
+	color: black;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 999;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(100, 142, 182, 0.25);
+	overflow: hidden;
+	width: 0;
+	height: 200px;
+	transition: .5s ease;
+}
+
+.card-header:hover .tapa {
+	width: 100%;
+	border-bottom: 10px solid red; 
+}
+
+.texto {
+	z-index: 1000;
+	white-space: nowrap;
+	color: rgb(52, 58, 64);
+	font-size: 18px;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 }

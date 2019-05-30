@@ -47,6 +47,7 @@
 
 <body>
   <div id="app">
+
     <nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-laravel cabecera">
       <div class="container-fluid">
         <a href="https://ennovatc.com/laravel/public" class="navbar-brand">
@@ -79,214 +80,230 @@
                 <a href="https://ennovatc.com/laravel/public/login" class="btn btn-outline-warning ml-1">Acceder</a>
               </li>
               <li class="nav-item">
-                <a href="#" onclick="doGTranslate('es|en');return false;" title="English" class="gflag nturl"
-                  style="background-position: 0px 0px;">
-                  <img src="https://gtranslate.net/flags/blank.png" height="32" width="32" alt="English">
-                </a>
-                <a href="#" onclick="doGTranslate('es|es');return false;" title="Spanish" class="gflag nturl"
-                  style="background-position: -600px -200px;">
-                  <img src="https://gtranslate.net/flags/blank.png" height="32" width="32" alt="Spanish">
-                </a>
+                <div class="dropdown show">
+                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Lenguaje
+                  </a>
+
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#" onclick="doGTranslate('es|en');return false;" title="English"
+                      class="gflag nturl" style="background-position: 0px 0px;">
+                      <img src="./img/lenguages/ingles.png" height="32" width="32" alt="English">
+                      Inglés
+                    </a>
+                    <a class="dropdown-item" href="#" onclick="doGTranslate('es|es');return false;" title="Spanish"
+                      class="gflag nturl" style="background-position: -600px -200px;">
+                      <img src="./img/lenguages/esp.png" height="32" width="32" alt="Spanish">
+                      Español
+                    </a>
+                  </div>
+                </div>
               </li>
             </div>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="container">
-      <h1>Desarrollo Web</h1>
-      <div class="row">
-        <div class="col-md-3">
-          <div class="card servicios">
-            <div class="card-header">
-              <div class="tapa">
-                <div class="texto">Sitios web para su Negocio</div class="texto">
+
+    <div class="banner-top"></div>
+    <div class="py-4">
+      <div class="container">
+        <h1>Desarrollo Web</h1>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card servicios">
+              <div class="card-header">
+                <div class="tapa">
+                  <div class="texto">Sitios web para su Negocio
+                  </div>
+                </div>
+                <img
+                  src="https://i2.wp.com/www.sonria.com/wp-content/uploads/2016/04/diseno-web-profesional.jpg?fit=890%2C539"
+                  class="base">
               </div>
-              <img
-                src="https://i2.wp.com/www.sonria.com/wp-content/uploads/2016/04/diseno-web-profesional.jpg?fit=890%2C539"
-                class="base">
-            </div>
-            <div class="card-body justify-content-center" style="text-align: center; padding: 4px 0px 0px;">
-              <h5 class="card-title">Sitio Web</h5>
-              <a href="desarrollo-web/sitio-web" style="font-size: 12px;">Ver Mas...</a>
+              <div class="card-body justify-content-center" style="text-align: center; padding: 4px 0px 0px;">
+                <h5 class="card-title">Sitio Web</h5>
+                <a href="desarrollo-web/sitio-web" style="font-size: 12px;">Ver Mas...</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card servicios">
-            <div class="card-header">
-              <div class="tapa">
-                <div class="texto">FanPage Para tu Negocio</div>
-              </div> <img src="http://pcworldenespanol.com/wp-content/uploads/sites/3/2016/09/fanpage.jpg" class="base">
-            </div>
-            <div class="card-body justify-content-center" style="text-align: center; padding: 4px 0px 0px;">
-              <h5 class="card-title">Fanpage</h5> <a href="desarrollo-web/fanpage" style="font-size: 12px;">Ver
-                Mas...</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card servicios">
-            <div class="card-header">
-              <div class="tapa">
-                <div class="texto">FanPage Para tu Negocio</div>
-              </div> <img
-                src="https://business.localsearch.com.au/wp-content/uploads/2018/09/allhours-plumbing-responsive.png"
-                class="base">
-            </div>
-            <div class="card-body justify-content-center" style="text-align: center; padding: 4px 0px 0px;">
-              <h5 class="card-title">Web Site</h5> <a href="desarrollo-web/web-site" style="font-size: 12px;">Ver
-                Mas...</a>
+          <div class="col-md-3">
+            <div class="card servicios">
+              <div class="card-header">
+                <div class="tapa">
+                  <div class="texto">FanPage Para tu Negocio</div>
+                </div> <img src="http://pcworldenespanol.com/wp-content/uploads/sites/3/2016/09/fanpage.jpg"
+                  class="base">
+              </div>
+              <div class="card-body justify-content-center" style="text-align: center; padding: 4px 0px 0px;">
+                <h5 class="card-title">Fanpage</h5> <a href="desarrollo-web/fanpage" style="font-size: 12px;">Ver
+                  Mas...</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card servicios">
-            <div class="card-header">
-              <div class="tapa">
-                <div class="texto">FanPage Para tu Negocio</div>
-              </div> <img src="http://gdsys.mx/wp-content/uploads/2016/11/monitor-voice.png" class="base">
-            </div>
-            <div class="card-body justify-content-center" style="text-align: center; padding: 4px 0px 0px;">
-              <h5 class="card-title">Sistema Desktop</h5> <a href="desarrollo-web/desktop" style="font-size: 12px;">Ver
-                Mas...</a>
+          <div class="col-md-3">
+            <div class="card servicios">
+              <div class="card-header">
+                <div class="tapa">
+                  <div class="texto">FanPage Para tu Negocio</div>
+                </div> <img
+                  src="https://business.localsearch.com.au/wp-content/uploads/2018/09/allhours-plumbing-responsive.png"
+                  class="base">
+              </div>
+              <div class="card-body justify-content-center" style="text-align: center; padding: 4px 0px 0px;">
+                <h5 class="card-title">Web Site</h5> <a href="desarrollo-web/web-site" style="font-size: 12px;">Ver
+                  Mas...</a>
+              </div>
             </div>
           </div>
+          <div class="col-md-3">
+            <div class="card servicios">
+              <div class="card-header">
+                <div class="tapa">
+                  <div class="texto">FanPage Para tu Negocio</div>
+                </div> <img src="http://gdsys.mx/wp-content/uploads/2016/11/monitor-voice.png" class="base">
+              </div>
+              <div class="card-body justify-content-center" style="text-align: center; padding: 4px 0px 0px;">
+                <h5 class="card-title">Sistema Desktop</h5> <a href="desarrollo-web/desktop"
+                  style="font-size: 12px;">Ver
+                  Mas...</a>
+              </div>
+            </div>
+          </div>
+          <hr>
         </div>
-        <hr>
+        <h1>Desarrollo Web</h1>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card servicios">
+              <div class="card-header">
+                <div class="tapa">
+                  <div class="texto">Sitios web para su Negocio
+                  </div>
+                </div>
+                <img
+                  src="https://i2.wp.com/www.sonria.com/wp-content/uploads/2016/04/diseno-web-profesional.jpg?fit=890%2C539"
+                  class="base">
+              </div>
+              <div class="card-body justify-content-center" style="text-align: center; padding: 4px 0px 0px;">
+                <h5 class="card-title">Sitio Web</h5>
+                <a href="desarrollo-web/sitio-web" style="font-size: 12px;">Ver Mas...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card servicios">
+              <div class="card-header">
+                <div class="tapa">
+                  <div class="texto">FanPage Para tu Negocio</div>
+                </div> <img src="http://pcworldenespanol.com/wp-content/uploads/sites/3/2016/09/fanpage.jpg"
+                  class="base">
+              </div>
+              <div class="card-body justify-content-center" style="text-align: center; padding: 4px 0px 0px;">
+                <h5 class="card-title">Fanpage</h5> <a href="desarrollo-web/fanpage" style="font-size: 12px;">Ver
+                  Mas...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card servicios">
+              <div class="card-header">
+                <div class="tapa">
+                  <div class="texto">FanPage Para tu Negocio</div>
+                </div> <img
+                  src="https://business.localsearch.com.au/wp-content/uploads/2018/09/allhours-plumbing-responsive.png"
+                  class="base">
+              </div>
+              <div class="card-body justify-content-center" style="text-align: center; padding: 4px 0px 0px;">
+                <h5 class="card-title">Web Site</h5> <a href="desarrollo-web/web-site" style="font-size: 12px;">Ver
+                  Mas...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card servicios">
+              <div class="card-header">
+                <div class="tapa">
+                  <div class="texto">FanPage Para tu Negocio</div>
+                </div> <img src="http://gdsys.mx/wp-content/uploads/2016/11/monitor-voice.png" class="base">
+              </div>
+              <div class="card-body justify-content-center" style="text-align: center; padding: 4px 0px 0px;">
+                <h5 class="card-title">Sistema Desktop</h5> <a href="desarrollo-web/desktop"
+                  style="font-size: 12px;">Ver
+                  Mas...</a>
+              </div>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <h1>Desarrollo Web</h1>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card servicios">
+              <div class="card-header">
+                <div class="tapa">
+                  <div class="texto">Sitios web para su Negocio
+                  </div>
+                </div>
+                <img
+                  src="https://i2.wp.com/www.sonria.com/wp-content/uploads/2016/04/diseno-web-profesional.jpg?fit=890%2C539"
+                  class="base">
+              </div>
+              <div class="card-body justify-content-center" style="text-align: center; padding: 4px 0px 0px;">
+                <h5 class="card-title">Sitio Web</h5>
+                <a href="desarrollo-web/sitio-web" style="font-size: 12px;">Ver Mas...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card servicios">
+              <div class="card-header">
+                <div class="tapa">
+                  <div class="texto">FanPage Para tu Negocio</div>
+                </div> <img src="http://pcworldenespanol.com/wp-content/uploads/sites/3/2016/09/fanpage.jpg"
+                  class="base">
+              </div>
+              <div class="card-body justify-content-center" style="text-align: center; padding: 4px 0px 0px;">
+                <h5 class="card-title">Fanpage</h5> <a href="desarrollo-web/fanpage" style="font-size: 12px;">Ver
+                  Mas...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card servicios">
+              <div class="card-header">
+                <div class="tapa">
+                  <div class="texto">FanPage Para tu Negocio</div>
+                </div> <img
+                  src="https://business.localsearch.com.au/wp-content/uploads/2018/09/allhours-plumbing-responsive.png"
+                  class="base">
+              </div>
+              <div class="card-body justify-content-center" style="text-align: center; padding: 4px 0px 0px;">
+                <h5 class="card-title">Web Site</h5> <a href="desarrollo-web/web-site" style="font-size: 12px;">Ver
+                  Mas...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card servicios">
+              <div class="card-header">
+                <div class="tapa">
+                  <div class="texto">FanPage Para tu Negocio</div>
+                </div> <img src="http://gdsys.mx/wp-content/uploads/2016/11/monitor-voice.png" class="base">
+              </div>
+              <div class="card-body justify-content-center" style="text-align: center; padding: 4px 0px 0px;">
+                <h5 class="card-title">Sistema Desktop</h5> <a href="desarrollo-web/desktop"
+                  style="font-size: 12px;">Ver
+                  Mas...</a>
+              </div>
+            </div>
+          </div>
+          <hr>
+        </div>
       </div>
     </div>
   </div>
-
-  <div class="container">
-    <h1>Desarrollo Web</h1>
-    <div class="row">
-      <div class="col-md-3">
-        <div class="card servicios">
-          <div class="card-header">
-            <div class="tapa">
-              <div class="texto">Sitios web para su Negocio</div class="texto">
-            </div>
-            <img
-              src="https://i2.wp.com/www.sonria.com/wp-content/uploads/2016/04/diseno-web-profesional.jpg?fit=890%2C539"
-              class="base">
-          </div>
-          <div class="card-body justify-content-center" style="text-align: center; padding: 4px 0px 0px;">
-            <h5 class="card-title">Sitio Web</h5>
-            <a href="desarrollo-web/sitio-web" style="font-size: 12px;">Ver Mas...</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card servicios">
-          <div class="card-header">
-            <div class="tapa">
-              <div class="texto">FanPage Para tu Negocio</div>
-            </div> <img src="http://pcworldenespanol.com/wp-content/uploads/sites/3/2016/09/fanpage.jpg" class="base">
-          </div>
-          <div class="card-body justify-content-center" style="text-align: center; padding: 4px 0px 0px;">
-            <h5 class="card-title">Fanpage</h5> <a href="desarrollo-web/fanpage" style="font-size: 12px;">Ver
-              Mas...</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card servicios">
-          <div class="card-header">
-            <div class="tapa">
-              <div class="texto">FanPage Para tu Negocio</div>
-            </div> <img
-              src="https://business.localsearch.com.au/wp-content/uploads/2018/09/allhours-plumbing-responsive.png"
-              class="base">
-          </div>
-          <div class="card-body justify-content-center" style="text-align: center; padding: 4px 0px 0px;">
-            <h5 class="card-title">Web Site</h5> <a href="desarrollo-web/web-site" style="font-size: 12px;">Ver
-              Mas...</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card servicios">
-          <div class="card-header">
-            <div class="tapa">
-              <div class="texto">FanPage Para tu Negocio</div>
-            </div> <img src="http://gdsys.mx/wp-content/uploads/2016/11/monitor-voice.png" class="base">
-          </div>
-          <div class="card-body justify-content-center" style="text-align: center; padding: 4px 0px 0px;">
-            <h5 class="card-title">Sistema Desktop</h5> <a href="desarrollo-web/desktop" style="font-size: 12px;">Ver
-              Mas...</a>
-          </div>
-        </div>
-      </div>
-      <hr>
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <h1>Desarrollo Web</h1>
-  <div class="row">
-    <div class="col-md-3">
-      <div class="card servicios">
-        <div class="card-header">
-          <div class="tapa">
-            <div class="texto">Sitios web para su Negocio</div class="texto">
-          </div>
-          <img
-            src="https://i2.wp.com/www.sonria.com/wp-content/uploads/2016/04/diseno-web-profesional.jpg?fit=890%2C539"
-            class="base">
-        </div>
-        <div class="card-body justify-content-center" style="text-align: center; padding: 4px 0px 0px;">
-          <h5 class="card-title">Sitio Web</h5>
-          <a href="desarrollo-web/sitio-web" style="font-size: 12px;">Ver Mas...</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card servicios">
-        <div class="card-header">
-          <div class="tapa">
-            <div class="texto">FanPage Para tu Negocio</div>
-          </div> <img src="http://pcworldenespanol.com/wp-content/uploads/sites/3/2016/09/fanpage.jpg" class="base">
-        </div>
-        <div class="card-body justify-content-center" style="text-align: center; padding: 4px 0px 0px;">
-          <h5 class="card-title">Fanpage</h5> <a href="desarrollo-web/fanpage" style="font-size: 12px;">Ver
-            Mas...</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card servicios">
-        <div class="card-header">
-          <div class="tapa">
-            <div class="texto">FanPage Para tu Negocio</div>
-          </div> <img
-            src="https://business.localsearch.com.au/wp-content/uploads/2018/09/allhours-plumbing-responsive.png"
-            class="base">
-        </div>
-        <div class="card-body justify-content-center" style="text-align: center; padding: 4px 0px 0px;">
-          <h5 class="card-title">Web Site</h5> <a href="desarrollo-web/web-site" style="font-size: 12px;">Ver
-            Mas...</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card servicios">
-        <div class="card-header">
-          <div class="tapa">
-            <div class="texto">FanPage Para tu Negocio</div>
-          </div> <img src="http://gdsys.mx/wp-content/uploads/2016/11/monitor-voice.png" class="base">
-        </div>
-        <div class="card-body justify-content-center" style="text-align: center; padding: 4px 0px 0px;">
-          <h5 class="card-title">Sistema Desktop</h5> <a href="desarrollo-web/desktop" style="font-size: 12px;">Ver
-            Mas...</a>
-        </div>
-      </div>
-    </div>
-    <hr>
-  </div>
-</div>
-</div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">

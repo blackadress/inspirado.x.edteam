@@ -208,7 +208,7 @@ hr {
 
 .card-header:hover .tapa {
 	width: 100%;
-	border-bottom: 10px solid red; 
+	border-bottom: 10px solid red;
 }
 
 .texto {
@@ -222,4 +222,69 @@ hr {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
+}
+
+/* card left */
+.contenedor {
+	display: flex
+}
+
+.card-izq {
+	position: fixed;
+	width: 25em;
+	max-height: 90%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-top: -20em;
+	margin-left: 10em;
+	background-color: rgba(52, 58, 64, 0.8);
+	color: antiquewhite;
+	border-radius: 2%;
+}
+
+.contenido-centro {
+	margin: 10px;
+	margin-left: 40em;
+}
+
+.banner-top {
+	/* background: url(./img/wall.jpg); */
+	height: 400px;
+	width: 100%;
+	color: #FFFFFF
+}
+
+.banner-img {
+	background-color: rgba(31, 126, 214, 1);
+	height: 400px;
+	/* z-index: 9999; */
+	opacity: 0.6;
+}
+
+.banner-img-top {
+	height: 400px;
+	width: 100%;
+	z-index: -5;
+}
+
+.texto-banner {
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 32px;
+	color: black;
+}
+
+.dropdown:hover>.dropdown-menu {
+	display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+	/*Without this, clicking will make it sticky*/
+	pointer-events: none;
+}
+
+#footer {
+	background-color: rgba(52, 58, 64, 0.8);
+	color: #fff;
 }

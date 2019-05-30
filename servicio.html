@@ -44,6 +44,7 @@
 
 <body>
   <div id="app">
+
     <nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-laravel cabecera">
       <div class="container-fluid">
         <a href="https://ennovatc.com/laravel/public" class="navbar-brand">
@@ -76,20 +77,34 @@
                 <a href="https://ennovatc.com/laravel/public/login" class="btn btn-outline-warning ml-1">Acceder</a>
               </li>
               <li class="nav-item">
-                <a href="#" onclick="doGTranslate('es|en');return false;" title="English" class="gflag nturl"
-                  style="background-position: 0px 0px;">
-                  <img src="https://gtranslate.net/flags/blank.png" height="32" width="32" alt="English">
-                </a>
-                <a href="#" onclick="doGTranslate('es|es');return false;" title="Spanish" class="gflag nturl"
-                  style="background-position: -600px -200px;">
-                  <img src="https://gtranslate.net/flags/blank.png" height="32" width="32" alt="Spanish">
-                </a>
+                <div class="dropdown show">
+                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Lenguaje
+                  </a>
+
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#" onclick="doGTranslate('es|en');return false;" title="English"
+                      class="gflag nturl" style="background-position: 0px 0px;">
+                      <img src="./img/lenguages/ingles.png" height="32" width="32" alt="English">
+                      Inglés
+                    </a>
+                    <a class="dropdown-item" href="#" onclick="doGTranslate('es|es');return false;" title="Spanish"
+                      class="gflag nturl" style="background-position: -600px -200px;">
+                      <img src="./img/lenguages/esp.png" height="32" width="32" alt="Spanish">
+                      Español
+                    </a>
+                  </div>
+                </div>
               </li>
             </div>
           </ul>
         </div>
       </div>
     </nav>
+
+    <div class="banner-top"></div>
+
     <main class="py-4">
       <div
         style="position: relative; height: 300px; margin-top: -30px; margin-bottom: 30px; background: url(&quot;https://png.pngtree.com/thumb_back/fw800/background/20190220/ourmid/pngtree-technological-sense-science-fiction-electronic-virtual-image_7688.jpg&quot;) center center / cover no-repeat fixed;">
@@ -289,7 +304,8 @@
             <a href="#" class="categoria" id="prueba">
               <div class="card">
                 <div class="card-body">
-                  <div class="logo"><img src="https://www.mercadonegro.pe/wp-content/uploads/2018/07/MARKTING-DIGITAL.jpg"></div>
+                  <div class="logo"><img
+                      src="https://www.mercadonegro.pe/wp-content/uploads/2018/07/MARKTING-DIGITAL.jpg"></div>
                   <h5 class="card-title">PRUEBA</h5>
                 </div>
               </div>

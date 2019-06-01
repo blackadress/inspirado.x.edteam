@@ -41,12 +41,13 @@ a {
 
 .servicios>.card-header>img {
 	width: 100%;
-	max-height: 200px;
+	height: 100%;
+	max-height: 12.5em;
 }
 
 .servicios>.card-header {
 	padding: 0px;
-	height: 200px;
+	height: 12.5em;
 }
 
 .vinnovacions>.card-body {
@@ -186,7 +187,6 @@ hr {
 
 /*  */
 
-
 .tapa {
 	font-weight: bold;
 	color: black;
@@ -202,7 +202,7 @@ hr {
 	background-color: rgba(100, 142, 182, 0.25);
 	overflow: hidden;
 	width: 0;
-	height: 200px;
+	height: 12.5em;
 	transition: .5s ease;
 }
 
@@ -235,7 +235,7 @@ hr {
 	height: 600px;
 	max-height: 90%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	margin-top: -20em;
+	margin-top: -24em;
 	margin-left: 10em;
 	background-color: rgba(52, 58, 64, 0.8);
 	color: antiquewhite;
@@ -249,27 +249,27 @@ hr {
 
 .banner-top {
 	/* background: url(./img/wall.jpg); */
-	height: 450px;
+	height: 475px;
 	width: 100%;
 	color: #FFFFFF
 }
 
 .banner-img {
 	background-color: rgba(31, 126, 214, 1);
-	height: 450px;
+	height: 475px;
 	/* z-index: 9999; */
-	opacity: 0.6;
+	opacity: 1;
 }
 
 .banner-img-top {
-	height: 450px;
+	height: 475px;
 	width: 100%;
 	z-index: -5;
 }
 
 .texto-banner {
 	position: absolute;
-	top: 25%;
+	top: 32%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	font-size: 32px;
@@ -288,4 +288,132 @@ hr {
 #footer {
 	background-color: rgba(52, 58, 64, 0.8);
 	color: #fff;
+}
+
+/* tabs */
+
+.tab {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.tab input.tabs {
+	position: absolute;
+	display: none;
+}
+
+.tabs {
+	position: relative;
+	padding: 0;
+	margin: 75px auto;
+}
+
+.tab li {
+	float: left;
+	width: auto;
+	list-style: none;
+	left: 0;
+	zoom: 1;
+	width: calc(100%/3);
+	text-align: center;
+	border: 1px solid #FFFFFF
+}
+
+.tab label {
+	display: block;
+	padding: 10px 20px;
+	border-radius: 2px 2px 0 0;
+	color: lightblue;
+	font-size: 20px;
+	background: rgba(24, 56, 85, 0.7);
+	cursor: pointer;
+	position: relative;
+	top: 3px;
+	transition: all 0.2s ease-in-out;
+}
+
+.tab label:hover {
+	background: rgba(24, 56, 85, 0.5);
+	top: 0;
+}
+
+.tabs:checked + label {
+	background: lightblue;
+	color: #fff;
+	top: 0;
+}
+
+.tabs:checked ~ .tab-content {
+	display: inline-flex;
+}
+
+.tab-content {
+	background: rgba(24, 56, 85, 1);
+	box-sizing: border-box;
+	color: #fff;
+	display: none;
+	left: 0;
+	line-height: 100%;
+	padding-top: 10px;
+	padding: 15px;
+	position: absolute;
+	font-size: 18px;
+	text-align: left;
+	width: 100%;
+	z-index: 2;
+	animation-duration: 0.5s;
+	height: 40vh;
+}
+
+.tab-content p {
+	text-align: justify;
+}
+
+/* scroll horizontal */
+.margin-top {
+	margin-top: 43vh;
+}
+
+.horizontal-scroll {
+	overflow: auto;
+	white-space: nowrap;
+}
+
+.horizontal-scroll a {
+	display: inline-block;
+}
+
+.horizontal-scroll img {
+	display: inline-block;
+	height: 300px;
+	width: 400px;
+}
+
+/* scroll horizontal equipo */
+
+.horizontal-scroll .card-body {
+	padding: 10px;
+	width: 25%;
+	display: inline-block;
+}
+
+.horizontal-scroll .card-body img {
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+}
+
+.horizontal-scroll > div {
+	background: #fff;
+	color: #000;
+	white-space: normal;
+	display: inline;
+	text-align: center;
+	word-wrap: break-word;
+}
+
+.card-text {
+	text-align: justify;
 }

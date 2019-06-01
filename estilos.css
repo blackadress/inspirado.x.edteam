@@ -339,18 +339,18 @@ hr {
 	top: 0;
 }
 
-.tabs:checked + label {
+.tabs:checked+label {
 	background: lightblue;
 	color: #fff;
 	top: 0;
 }
 
-.tabs:checked ~ .tab-content {
+.tabs:checked~.tab-content {
 	display: inline-flex;
 }
 
 .tab-content {
-	background: rgba(24, 56, 85, 1);
+	background: rgba(63, 92, 119, 1);
 	box-sizing: border-box;
 	color: #fff;
 	display: none;
@@ -371,6 +371,13 @@ hr {
 	text-align: justify;
 }
 
+.tab-content .card-body {
+	background-color: rgba(60, 76, 85, 1);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 2%;
+	margin-bottom: 1px;
+}
+
 /* scroll horizontal */
 .margin-top {
 	margin-top: 43vh;
@@ -385,10 +392,15 @@ hr {
 	display: inline-block;
 }
 
+
 .horizontal-scroll img {
 	display: inline-block;
 	height: 300px;
 	width: 400px;
+}
+
+.horizontal-scroll img:hover {
+	opacity: 0.6;
 }
 
 /* scroll horizontal equipo */
@@ -397,6 +409,8 @@ hr {
 	padding: 10px;
 	width: 25%;
 	display: inline-block;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 2%
 }
 
 .horizontal-scroll .card-body img {
@@ -405,7 +419,7 @@ hr {
 	width: 200px;
 }
 
-.horizontal-scroll > div {
+.horizontal-scroll>div {
 	background: #fff;
 	color: #000;
 	white-space: normal;

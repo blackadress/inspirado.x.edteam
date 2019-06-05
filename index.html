@@ -2,125 +2,178 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <style>
-        a.gflag {
-            vertical-align: middle;
-            font-size: 24px;
-            padding: 1px 0;
-            background-repeat: no-repeat;
-            background-image: url(http://gtranslate.net/flags/32.png);
-        }
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="estilos.css">
 
-        a.gflag img {
-            border: 0;
-        }
+  <style>
+    a.gflag {
+      vertical-align: middle;
+      font-size: 24px;
+      padding: 1px 0;
+      background-repeat: no-repeat;
+      background-image: url(http://gtranslate.net/flags/32.png);
+    }
 
-        ul.navbar-bar {
-            width: 1000%;
-        }
+    a.gflag img {
+      border: 0;
+    }
 
-        .nav-item {
-            padding: 0.25em;
-        }
+    ul.navbar-bar {
+      width: 1000%;
+    }
 
-        .cabecera {
-            height: 5em;
-        }
+    .nav-item {
+      padding: 0.25em;
+    }
 
-        /* 
+    .cabecera {
+      height: 5em;
+    }
+
+    /* 
             justify-content-between
             justify-content-end
+            class separador + div.separador
         */
-    </style>
+  </style>
 </head>
 
 <body>
-    <div id="app">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-laravel cabecera">
-            <div class="container-fluid">
-                <a href="https://ennovatc.com/laravel/public" class="navbar-brand">
-                    ENNOVA M&amp;F S.A.C.
-                </a>
-                <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
-                    class="navbar-toggler">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+  <div id="app">
+    <nav class="navbar navbar-expand-md navbar-laravel cabecera">
+      <div class="container-fluid">
+        <a href="https://ennovatc.com/laravel/public" class="navbar-brand">
+          ENNOVA M&amp;F S.A.C.
+        </a>
+        <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+          class="navbar-toggler">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <div id="navbarSupportedContent" class="collapse navbar-collapse justify-content-between">
-                    <ul class="navbar-nav col-md-12" style="font-weight: bold;">
-                        <div class="collapse navbar-collapse">
-                            <li class="nav-item ">
-                                <a href="https://ennovatc.com/laravel/public/home" class="nav-link">Inicio</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a href="https://ennovatc.com/laravel/public/servicio" class="nav-link ">Servicio</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a href="https://ennovatc.com/laravel/public/innovacion"
-                                    class="nav-link ">Innovacion</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a href="https://ennovatc.com/laravel/public/agenda" class="nav-link ">Agenda</a>
-                            </li>
-                        </div>
-                        <div class="collapse navbar-collapse justify-content-end">
-                            <li class="nav-item">
-                                <a href="https://ennovatc.com/laravel/public/login"
-                                    class="btn btn-outline-warning ml-1">Acceder</a>
-                            </li>
-                            <li class="nav-item">
-                                <div class="dropdown show">
-                                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
-                                        id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false">
-                                        Lenguaje
-                                    </a>
+        <div id="navbarSupportedContent" class="collapse navbar-collapse justify-content-between">
+          <ul class="navbar-nav col-md-12 items-menu" style="font-weight: bold;">
 
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                        <a class="dropdown-item" href="#" onclick="doGTranslate('es|en');return false;"
-                                            title="English" class="gflag nturl" style="background-position: 0px 0px;">
-                                            <img src="./img/lenguages/ingles.png" height="32" width="32" alt="English">
-                                            Inglés
-                                        </a>
-                                        <a class="dropdown-item" href="#" onclick="doGTranslate('es|es');return false;"
-                                            title="Spanish" class="gflag nturl"
-                                            style="background-position: -600px -200px;">
-                                            <img src="./img/lenguages/esp.png" height="32" width="32" alt="Spanish">
-                                            Español
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                        </div>
-                    </ul>
-                </div>
+            <div class="separador"></div>
+
+            <div class="collapse navbar-collapse">
+              <li class="nav-item ">
+                <a href="https://ennovatc.com/laravel/public/home" class="nav-link">Inicio</a>
+              </li>
+              <li class="nav-item ">
+                <a href="https://ennovatc.com/laravel/public/servicio" class="nav-link ">Servicio</a>
+              </li>
+              <li class="nav-item ">
+                <a href="https://ennovatc.com/laravel/public/innovacion" class="nav-link ">Innovacion</a>
+              </li>
+              <li class="nav-item ">
+                <a href="https://ennovatc.com/laravel/public/agenda" class="nav-link ">Agenda</a>
+              </li>
             </div>
-        </nav>
-    </div>
-    <div class="banner-top">
-        <div class="banner-img">
-            <img src="./img/banner/fondos_Mesa de trabajo 1.png" alt="" class="banner-img-top">
-            <div class="texto-banner">Texto banner</div>
+            <div class="collapse navbar-collapse">
+              <li class="nav-item">
+                <a href="https://ennovatc.com/laravel/public/login" class="btn btn-outline-warning ml-1">Acceder</a>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown show">
+                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Lenguaje
+                  </a>
+
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#" onclick="doGTranslate('es|en');return false;" title="English"
+                      class="gflag nturl" style="background-position: 0px 0px;">
+                      <img src="./img/lenguages/ingles.png" height="32" width="32" alt="English">
+                      Inglés
+                    </a>
+                    <a class="dropdown-item" href="#" onclick="doGTranslate('es|es');return false;" title="Spanish"
+                      class="gflag nturl" style="background-position: -600px -200px;">
+                      <img src="./img/lenguages/esp.png" height="32" width="32" alt="Spanish">
+                      Español
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </div>
+          </ul>
         </div>
+      </div>
+    </nav>
+    <div class="banner-top">
+      <div class="banner-img">
+        <img src="./img/banner/fondos_Mesa de trabajo 1.png" alt="" class="banner-img-top">
+        <div class="texto-banner">Texto banner</div>
+      </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+    <footer class="main-footer">
+      <div class="contenedor-footer container">
+        <div class="col-md-3">
+          <h5>Nuestro Facebook</h5>
+          <!-- <div data-href="https://www.facebook.com/Ennova-mf-sac-2133787133358500" data-width="340"
+              data-hide-cover="false" data-show-facepile="true" class="fb-page"></div> -->
+          <ul>
+            <li><a href="">item1</a></li>
+            <li><a href="">item2</a></li>
+            <li><a href="">item3</a></li>
+            <li><a href="">item4</a></li>
+            <li><a href="">item5</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5 class="card-title">¿Que Te Pareció?</h5>
+          <!-- <div data-href="https://ennovatc.com/laravel/public/comments#configurator" data-width="auto" data-numposts="5"
+              class="fb-comments"></div> -->
+          <ul>
+            <li><a href="">item1</a></li>
+            <li><a href="">item2</a></li>
+            <li><a href="">item3</a></li>
+            <li><a href="">item4</a></li>
+            <li><a href="">item5</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>titulo</h5>
+          <ul>
+            <li><a href="">item1</a></li>
+            <li><a href="">item2</a></li>
+            <li><a href="">item3</a></li>
+            <li><a href="">item4</a></li>
+            <li><a href="">item5</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>titulo</h5>
+          <ul>
+            <li><a href="">item1</a></li>
+            <li><a href="">item2</a></li>
+            <li><a href="">item3</a></li>
+            <li><a href="">item4</a></li>
+            <li><a href="">item5</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>

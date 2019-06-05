@@ -13,7 +13,7 @@ a {
 
 .categoria {
 	display: block;
-	background-color: #343A40;
+	background-color: rgb(144, 172, 199);
 	padding: 0px;
 }
 
@@ -124,9 +124,15 @@ hr {
 	background: #343A40;
 }
 
+/* items menu */
+.separador {
+	width: 100%;
+}
+
 /* Sweep to right en servicio.html */
 .categoria>.card {
-	background-color: #343A40;
+	background-color: rgb(144, 172, 199);
+	color: black;
 	vertical-align: middle;
 	-webkit-transform: perspective(1px) translateZ(0);
 	transform: perspective(1px) translateZ(0);
@@ -146,7 +152,7 @@ hr {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: #767585;
+	background: rgba(30, 73, 192, 0.8);
 	-webkit-transform: scaleX(0);
 	transform: scaleX(0);
 	-webkit-transform-origin: 0 50%;
@@ -235,11 +241,48 @@ hr {
 	height: 600px;
 	max-height: 90%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	margin-top: -24em;
+	margin-top: -26rem;
 	margin-left: 10em;
-	background-color: rgba(52, 58, 64, 0.8);
-	color: antiquewhite;
+	background-color: rgba(212, 215, 219, 1);
+	color: black;
 	border-radius: 2%;
+}
+
+.contenedor-btn-card {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 25px;
+}
+
+.boton-card {
+	display: inline-block;
+	padding: 5px;
+	margin: 0 auto;
+	font-size: 1.2rem;
+	border-radius: 5px;
+}
+
+.btn-azul {
+	display: inline-block;
+	color: blue;
+	border: 1px solid blue;
+}
+
+.btn-azul:hover {
+	display: inline-block;
+	background: blue;
+	color: white;
+}
+
+.btn-rojo {
+	color: rgba(230, 19, 54, 1);
+	border: 1px solid rgba(230, 19, 54, 1);
+}
+
+.btn-rojo:hover {
+	background: rgba(230, 19, 54, 1);
+	color: white;
 }
 
 .contenido-centro {
@@ -286,7 +329,7 @@ hr {
 }
 
 #footer {
-	background-color: rgba(52, 58, 64, 0.8);
+	background-color: rgba(212, 215, 219, 1);
 	color: #fff;
 }
 
@@ -325,9 +368,9 @@ hr {
 	display: block;
 	padding: 10px 20px;
 	border-radius: 2px 2px 0 0;
-	color: lightblue;
+	color: black;
 	font-size: 20px;
-	background: rgba(24, 56, 85, 0.7);
+	background: rgba(24, 56, 85, 0.5);
 	cursor: pointer;
 	position: relative;
 	top: 3px;
@@ -335,13 +378,13 @@ hr {
 }
 
 .tab label:hover {
-	background: rgba(24, 56, 85, 0.5);
+	background: rgba(24, 56, 85, 0.7);
 	top: 0;
 }
 
 .tabs:checked+label {
 	background: lightblue;
-	color: #fff;
+	color: black;
 	top: 0;
 }
 
@@ -350,9 +393,10 @@ hr {
 }
 
 .tab-content {
-	background: rgba(63, 92, 119, 1);
+	align-content: flex-end;
+	background: rgb(188, 199, 192);
 	box-sizing: border-box;
-	color: #fff;
+	color: black;
 	display: none;
 	left: 0;
 	line-height: 100%;
@@ -361,10 +405,13 @@ hr {
 	position: absolute;
 	font-size: 18px;
 	text-align: left;
-	width: 100%;
 	z-index: 2;
 	animation-duration: 0.5s;
-	height: 40vh;
+	height: 55vh;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .tab-content p {
@@ -372,7 +419,7 @@ hr {
 }
 
 .tab-content .card-body {
-	background-color: rgba(60, 76, 85, 1);
+	background-color: rgb(208, 216, 209);
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 2%;
 	margin-bottom: 1px;
@@ -380,7 +427,7 @@ hr {
 
 /* scroll horizontal */
 .margin-top {
-	margin-top: 43vh;
+	margin-top: 52vh;
 }
 
 .horizontal-scroll {
@@ -394,6 +441,7 @@ hr {
 
 
 .horizontal-scroll img {
+	margin: 10px;
 	display: inline-block;
 	height: 300px;
 	width: 400px;
@@ -406,6 +454,7 @@ hr {
 /* scroll horizontal equipo */
 
 .horizontal-scroll .card-body {
+	margin: 10px;
 	padding: 10px;
 	width: 25%;
 	display: inline-block;
@@ -428,6 +477,88 @@ hr {
 	word-wrap: break-word;
 }
 
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background: rgba(212, 215, 219, 1);
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(212, 215, 219, 1);
+}
+
 .card-text {
 	text-align: justify;
+}
+
+/* footer */
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+
+body::after {
+	content: '';
+	display: block;
+	height: 150px;
+	/* Set same as footer's height */
+}
+
+footer {
+	margin-top: 2em;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 200px;
+	background: rgba(212, 215, 219, 1);
+	color: rgba(6, 30, 83, 0.9);
+}
+
+footer h5 {
+	padding-top: 10px;
+	color: rgba(12, 65, 180, 0.9) !important;
+}
+
+footer li {
+	list-style: none;
+	left: 0;
+	zoom: 1;
+	padding: 2px;
+	margin-left: -40px;
+}
+
+footer li a {
+	color: rgba(6, 30, 83, 0.9);
+}
+
+.contenedor-footer {
+	display: flex;
+	flex-direction: row;
+}
+
+.row {
+	margin-top: 8em;
+	margin-bottom: 8em;
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
